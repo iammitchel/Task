@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.right form{
+    border: 1px solid black;
+    padding: 5px 30px;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.right .heading {
+    display: flex;
+    border-radius: 5px;
+    padding: 10px 80px;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.right .heading p{
+    margin-left: 5px;
+    color: rgb(221, 210, 210);
+    font-size: 12px;
+    margin-top:3px;
+}
+
+.right footer {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.right footer h4{
+    margin-left: 8px;
+    color: red;
+}
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=password]{
+    width: 100%;
+    padding: 12px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+button{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 10px;
+    width: 100%;
+    margin-top: 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.left{
+    color: white;
+    margin-right: 150px;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.error-msg {
+    color: red;
+    display: none;
+}
+
+.error-svg {
+    position: relative;
+        bottom: 35px;
+        left: 430px;
+}
+
+@media only screen and (max-width: 375px) {
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    body {
+        background-color: hsl(0, 100%, 74%);
+        background-image: url(./images/bg-intro-mobile.png);
+    
+    }
+    
+    .container{
+        width: 100%;
+        display: inline;
+        margin: 5px;
+        
+
+    }
+
+    .right{
+        margin:20px ;
+    }
+
+        .right .heading {
+            display: block;
+            border-radius: 5px;
+            padding: 10px 90px;
+            background-color: hsl(248, 32%, 49%);
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .right footer {
+            display: block;
+            flex-direction: row;
+            margin: 2px;
+            padding: 10px 0px;
+
+        }
+
+        .right footer h4{
+        display: inline-flexbox;
+        }
+
+         .right footer p{
+        font-size: 15px;
+        }
+
+
+    .left{
+        margin: 30px ;
+    }
+
+    .left h1{
+        margin-left: 40px;
+    }
+    .left p{
+        margin-right: 5px;
+        margin-left: 30px;
+    }
+}
